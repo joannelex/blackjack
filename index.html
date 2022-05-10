@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+        <h1 id="black">BLACK</h1>
+        <h1 id="jack">JACK</h1>
+        <div id="x"></div>
+        <script>
+            var img = document.createElement("img");
+            img.src = "images/cards.png";
+            img.setAttribute("style", "width: 50px")
+            var div = document.getElementById("x")
+            div.appendChild(img)
+        </script>
+       
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <p id="dealer-el">Dealer:</p>
+        <p id="dealerSum-el">Dealer Sum:</p>
+        <button id="btn" onclick="startGame()">START GAME</button>
+        <button onclick="newCard()">NEW CARD</button>
+        <button onclick="stand()">STAND</button>
+        <p id="player-el"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
